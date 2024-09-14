@@ -24,6 +24,7 @@ cursor = connection.cursor()
 cursor.execute("""
 CREATE TABLE user_account (
     username VARCHAR(45) PRIMARY KEY,
+    password VARCHAR(45),
     first_name VARCHAR(45),
     last_name VARCHAR(45),
     email VARCHAR(45),
