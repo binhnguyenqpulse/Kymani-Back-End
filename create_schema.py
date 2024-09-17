@@ -15,8 +15,8 @@ connection = psycopg2.connect(
     host="localhost",
     database="Kymani",
     user="postgres",
-    password="1234",
-    port = 5433
+    password="12345",
+    port = 5432
 )
 cursor = connection.cursor()
 
