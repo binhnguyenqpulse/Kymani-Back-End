@@ -33,8 +33,6 @@ def create_user_account (username, password, email):
     cursor.execute (insert_query, (username, password, email))
     connection.commit()
     
-# def create_
-    
 # 2. Read
 def read_user_account ():
     cursor.execute("SELECT * FROM user_account")
@@ -64,8 +62,8 @@ def delete_user_account (username):
 
 
 ######################################## CRUD 
-# create_user_account ('binhnguyen','1234','binh@qcp.com')
-# update_user_email('binhnguyen','binh.nguyen@qcp.com')
+create_user_account ('binhnguyen','1234','binh@qcp.com')
+update_user_email('binhnguyen','binh.nguyen@qcp.com')
 # delete_user_account('binhnguyen')
 read_user_account()
 
