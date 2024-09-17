@@ -22,7 +22,6 @@ connection = psycopg2.connect(
 )
 cursor = connection.cursor()
 
-\
 ######################################## 
 
 # create_user_account ('binhnguyen','1234','binh@qcp.com', cursor, connection)
