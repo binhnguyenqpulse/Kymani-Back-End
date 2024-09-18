@@ -1,11 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Wed Sep 11 16:42:21 2024
-
-@author: binhnguyen
-"""
-
 
 import psycopg2
 
@@ -14,9 +8,13 @@ import psycopg2
 connection = psycopg2.connect(
     host="localhost",
     database="Kymani",
-    user="postgres",
-    password="12345",
-    port = 5432
+    # Nishi
+    # password="12345",
+    # port = 5432
+    
+    # Binh
+    password="1234",
+    port = 5433
 )
 cursor = connection.cursor()
 

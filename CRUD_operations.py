@@ -1,10 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Fri Sep 13 23:00:27 2024
-
-@author: binhnguyen
-"""
 
 # Interacting with DB of Kymani using psycopg2
 
@@ -17,6 +12,11 @@ connection = psycopg2.connect(
     host="localhost",
     database="Kymani",
     user="postgres",
+    # Nishi
+    # password="12345",
+    # port = 5432
+    
+    # Binh
     password="1234",
     port = 5433
 )

@@ -1,10 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Tue Sep 17 14:30:35 2024
 
-@author: binhnguyen
-"""
 import json
 
 ########################################
