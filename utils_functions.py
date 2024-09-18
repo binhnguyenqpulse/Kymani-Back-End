@@ -5,18 +5,28 @@ Created on Tue Sep 17 14:30:35 2024
 
 @author: binhnguyen
 """
+import json
+
+########################################
+
+# Create JSON file
+
+def load_json_data(file_path):
+    """Load data from a JSON file."""
+    with open(file_path, 'r') as file:
+        return json.load(file)
 
 ########################################
 
 # CRUD ops
 
 # 1. Create
-def create_user_account (username, password, email, cursor, connection):
+def create_user_account (username, password, first_name, last_name, email, project_manager, login_time, cursor, connection):
     insert_query = """
-    INSERT INTO user_account (username, password, email)
-    VALUES (%s,%s,%s)
+    INSERT INTO user_account (username, password, first_name, last_name, email, project_manager, login_time)
+    VALUES (%s,%s,%s,%s,%s,%s,%s)
     """
-    cursor.execute (insert_query, (username, password, email))
+    cursor.execute (insert_query, (username, password, first_name, last_name, email, project_manager, login_time))
     connection.commit()
     
 # 2. Read
