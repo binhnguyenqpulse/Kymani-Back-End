@@ -1,6 +1,7 @@
 [
     {
     "username": "jdoe",
+    "password": "12345",
     "first_name": "John",
     "last_name": "Doe",
     "email": "jdoe@example.com",
@@ -9,6 +10,7 @@
     },
     {
     "username": "asmith",
+    "password": "12345",
     "first_name": "Alice",
     "last_name": "Smith",
     "email": "asmith@example.com",
@@ -17,6 +19,7 @@
     },
     {
     "username": "bwilliams",
+    "password": "12345",
     "first_name": "Bob",
     "last_name": "Williams",
     "email": "bwilliams@example.com",
@@ -25,6 +28,7 @@
     },
     {
     "username": "bSmith",
+    "password": "12345",
     "first_name": "Brian",
     "last_name": "Smith",
     "email": "bsmith@example.com",

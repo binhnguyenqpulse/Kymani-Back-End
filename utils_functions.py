@@ -21,12 +21,12 @@ def load_json_data(file_path):
 # CRUD ops
 
 # 1. Create
-def create_user_account (username,first_name, last_name, email, project_manager, login_time, cursor, connection):
+def create_user_account (username, password, first_name, last_name, email, project_manager, login_time, cursor, connection):
     insert_query = """
-    INSERT INTO user_account (username,first_name, last_name, email, project_manager, login_time)
-    VALUES (%s,%s,%s,%s,%s,%s)
+    INSERT INTO user_account (username, password, first_name, last_name, email, project_manager, login_time)
+    VALUES (%s,%s,%s,%s,%s,%s,%s)
     """
-    cursor.execute (insert_query, (username,first_name, last_name, email, project_manager, login_time))
+    cursor.execute (insert_query, (username, password, first_name, last_name, email, project_manager, login_time))
     connection.commit()
     
 # 2. Read
